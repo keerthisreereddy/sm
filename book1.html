@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location - Street Magic</title>
+    <link rel="stylesheet" href="stylecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top">
+        <img src="./image.jpg" alt="Logo" class="logo-image" width="70px">
+        <div class="logo">Street Magic</div>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="book1.html">Book a Table</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="SocialMedia">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</div>
+
+    <h1>Book your table with Easy Manner</h1>
+    <p>Find us at...</p>
+    <!-- Add location details here -->
+    <main>
+        <section id="book">
+            <h1>Book Now.....</h1>
+            <br><br>
+            <form action="submit_booking.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" required>
+                </div>
+                <br><br>
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+    </main>
+    <script src="ja.js"></script>
+</body>
+</html>

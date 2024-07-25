@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu - Street Magic</title>
+    <link rel="stylesheet" href="stylecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+    <div class="top">
+        <img src="./image.jpg" alt="Logo" class="logo-image" width="70px">
+        <div class="logo">Street Magic</div>
+        
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="book1.html">Book a Table</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="SocialMedia">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <h1>Our Menu</h1><br><br>
+    <p>Here is the list of our delicious offerings...</p>
+    <!-- Add menu items here -->
+    <div class="founders">
+        <img class="found" src="./b8.jpg" width="180px" height="220px">
+        <img class="found" src="./b1.jpg" width="180px" height="220px">
+        <img class="found" src="./c.jpg"  width="180px" height="220px">
+        <img class="found" src="./i.jpg"  width="180px" height="220px">
+    </div>
+    <div class="f">
+        <img class="found" src="./f1.jpg"  width="180px" height="220px">
+        <img class="found" src="./m.jpg"  width="180px" height="220px">
+        <img class="found" src="./s1.jpg"  width="180px" height="220px">
+    </div>
+    <div class="menu-item">
+        <div class="item-details">
+            <h2>Sambar Rice + Chicken Fry + Curd Rice + Dessert</h2>
+            <p>₹239</p>
+            <button class="add-to-cart" onclick="addToCart('Sambar Rice + Chicken Fry + Curd Rice + Dessert', 239)">+</button>
+            <button class="remove-from-cart" onclick="removeFromCart('Sambar Rice + Chicken Fry + Curd Rice + Dessert', 239)">-</button>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-details">
+            <h2>Sambar Rice + Chicken Kheema + Curd Rice + Dessert</h2>
+            <p>₹239</p>
+            <button class="add-to-cart" onclick="addToCart('Sambar Rice + Chicken Kheema + Curd Rice + Dessert', 239)">+</button>
+            <button class="remove-from-cart" onclick="removeFromCart('Sambar Rice + Chicken Kheema + Curd Rice + Dessert', 239)">-</button>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-details">
+            <h2>Sambar Rice + Aloo Fry + Curd Rice + Dessert</h2>
+            <p>₹229</p>
+            <button class="add-to-cart" onclick="addToCart('Sambar Rice + Aloo Fry + Curd Rice + Dessert', 229)">+</button>
+            <button class="remove-from-cart" onclick="removeFromCart('Sambar Rice + Aloo Fry + Curd Rice + Dessert', 229)">-</button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="total"></p>
+    </div>
+
+    <script src="ja.js"></script>
+</body>
+</html>
